@@ -66,6 +66,7 @@ def creer_site(context):
     time.sleep(4)
     context.driver.find_element(By.XPATH, personnaliser_site).click()
     time.sleep(4)
+     context.drive.refresh()                                 
 
 
 @when('creer les pages wiki avec tag')
