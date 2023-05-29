@@ -44,7 +44,7 @@ def seconnecter(context):
     context.driver.implicitly_wait(20)
     context.driver.find_element(By.NAME, txt_username).send_keys()
     time.sleep(2)
-    context.driver.find_element(By.NAME, txt_password).(password)
+    context.driver.find_element(By.NAME, txt_password).send_keys()
     time.sleep(2)
     context.driver.find_element(By.XPATH, btn_login_id).click()
     time.sleep(4)
