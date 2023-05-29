@@ -38,7 +38,7 @@ button_delete_ok = "//button[text()='OK']"
 
 @given('se connecter avec un compte')
 def seconnecter(context):
-    context.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    context.driver = webdriver.Chrome((ChromeDriverManager().install()))
     context.driver.get(url)
     context.driver.maximize_window()
     context.driver.implicitly_wait(20)
