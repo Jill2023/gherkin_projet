@@ -38,11 +38,11 @@ button_delete_ok = "//button[text()='OK']"
 
 @given('se connecter avec un compte')
 def seconnecter(context):
-    context.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    context.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()
     context.driver.get(url)
     context.driver.maximize_window()
     context.driver.implicitly_wait(20)
-    context.driver.find_element(By.NAME, txt_username).send_keys(username)
+    context.driver.find_element(By.NAME, txt_username).keys(username)
     time.sleep(2)
     context.driver.find_element(By.NAME, txt_password).send_keys(password)
     time.sleep(2)
@@ -51,11 +51,11 @@ def seconnecter(context):
 
 @when('creer un site')
 def creer_site(context):
-    context.driver.find_element(By.ID, lnk_Site).click()
+    context.driver.find_element(By.ID, lnk_Site).click
     time.sleep(4)
     context.driver.find_element(By.ID, lnk_creer_site).click()
     time.sleep(4)
-    context.driver.find_element(By.XPATH, txt_NomSite).send_keys(NomSite)
+    context.driver.find_element(By.XPATH, txt_NomSite).send_keys()
     time.sleep(4)
     context.driver.find_element(By.ID, btn_public).click()
     time.sleep(4)
