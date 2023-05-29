@@ -1,0 +1,15 @@
+Admin@JILLS-HP-LAPTOP MINGW64 ~/Gherkin_projet
+$ behave features/wiki_page.feature
+Feature: Tester le function de filtrer les pages wike par tag. # features/wiki_p
+age.feature:1
+  Se connecter avec un compte avec un site existant et il y a plusieur page wiki
+  dans le site avec tag. Filtrer les pages wiki par un tag.
+  Scenario: Filtrer les pages wike par tag  # features/wiki_page.feature:5
+    Then filtrer les pages wiki par tag     # features/steps/wiki_page_steps.py:95
+    And supprimer le site                   # features/steps/wiki_page_steps.py:102
+    And deconnecter                         # features/steps/wiki_page_steps.py:118
+
+1 feature passed, 0 failed, 0 skipped
+1 scenario passed, 0 failed, 0 skipped
+6 steps passed, 0 failed, 0 skipped, 0 undefined
+Took 2m6.806s
