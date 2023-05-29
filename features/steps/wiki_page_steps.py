@@ -42,7 +42,7 @@ def seconnecter(context):
     context.driver.get(url)
     context.driver.maximize_window()
     context.driver.implicitly_wait(20)
-    context.driver.find_element(By.NAME, txt_username).send_keys(password)
+    context.driver.find_element(By.NAME, txt_username).
     time.sleep(2)
     context.driver.find_element(By.NAME, txt_password).send_keys(anyting)
     time.sleep(2)
