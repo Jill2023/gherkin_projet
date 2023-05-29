@@ -44,9 +44,9 @@ def seconnecter(context):
     context.driver.implicitly_wait(20)
     context.driver.find_element(By.NAME, txt_username).
     time.sleep(2)
-    context.driver.find_element(By.NAME, txt_password).send_keys(anyting)
+    context.driver.find_element(By.NAME, txt_password).send_keys()
     time.sleep(2)
-    context.driver.find_element(By.XPATH, btn_login_id).click()
+    driver.find_element(By.XPATH, btn_login_id).click()
     time.sleep(4)
 
 @when('creer un site')
